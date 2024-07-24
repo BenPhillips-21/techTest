@@ -3,5 +3,7 @@
     <h2 class="title">{{ product.name }}</h2>
     <div class="row">
         <span class="price">${{ product.price }}</span>
+        <p>{{ product.sku }}</p>
     </div>
+    <a [routerLink]="['/product', product.sku]">View Product</a>
 </div>
