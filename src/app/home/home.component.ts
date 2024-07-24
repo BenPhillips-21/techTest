@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from '../types';
-import { MOCK_DATA } from '../../assets/MOCK_DATA';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -9,12 +7,6 @@ import { MOCK_DATA } from '../../assets/MOCK_DATA';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit {
-  data: Product[] = MOCK_DATA;
+export class HomeComponent {
 
-  constructor() {}
-
-  ngOnInit(): void {
-    console.log(this.data);
-  }
 }
