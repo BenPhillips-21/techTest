@@ -1,9 +1,10 @@
 <div class="column gap-1 wrapper">
     <img [src]="product.image" alt="Product image">
     <h2 class="title">{{ product.name }}</h2>
-    <div class="row">
+    <div class="prices">
         <span class="price">${{ product.price }}</span>
-        <p>{{ product.sku }}</p>
+        <span class="rrp">${{product.rrp - product.price}} off RRP of ${{product.rrp}}</span>
     </div>
+    <button>Add To Cart</button>
     <a [routerLink]="['/product', product.sku]">View Product</a>
 </div>

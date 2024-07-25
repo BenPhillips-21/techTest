@@ -1,6 +1,5 @@
-<div class="column">
-    <div class="row wrap gap-1 space-between" *ngFor="let product of products">
+<div class="product-grid">
+  <div *ngFor="let product of products">
       <app-product [product]="product"></app-product>
-    </div>
+  </div>
 </div>
-  

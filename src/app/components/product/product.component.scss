@@ -10,12 +10,27 @@
 
     .title {
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .prices {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
     }
 
     .price {
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 1.3rem;
+        color: #85BB65;
+    }
+
+    .rrp {
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: red;
     }
 
     .row {  
