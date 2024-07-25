@@ -5,6 +5,8 @@
         <span class="price">${{ product.price }}</span>
         <span class="rrp">${{product.rrp - product.price}} off RRP of ${{product.rrp}}</span>
     </div>
-    <button>Add To Cart</button>
-    <a [routerLink]="['/product', product.sku]">View Product</a>
+    <div class="productButtons">
+        <button class="addToCart" (click)="addToCart(product)">Add To Cart</button>
+        <button class="viewProduct" [routerLink]="['/product', product.sku]">View Product</button>
+    </div>    
 </div>

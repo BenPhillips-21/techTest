@@ -1,0 +1,19 @@
+<div class="cartContainer">
+<h1>Cart</h1>
+@for(item of cartService.getItems(); track item.sku) {
+<div class="cartItem">
+    <h3>{{ item.name }}</h3>
+    <div class="cartInfo">
+        <p>Price: ${{ item.price }}</p>
+        <p>Quantity: {{ item.quantity }}</p>
+    </div>
+    <div class="cartButtons">
+        <button (click)="deleteFromCart(item)">Remove</button>
+        <button (click)="plusQuantity(item.sku)">+</button>
+        <button (click)="minusQuantity(item.sku)">-</button>
+    </div>
+</div>
+}
+
+<h1>Total: {{ cartService.getTotal() }}</h1>
+</div>

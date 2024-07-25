@@ -4,4 +4,5 @@ export interface Product {
     price: number
     rrp: number
     image: string
+    quantity?: number
 }

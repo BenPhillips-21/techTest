@@ -1,3 +1,8 @@
-<div>
-    <p>{{product?.name}}</p>
+<div class="product-details">
+    <h1>{{product?.name}}</h1>
+    <img [src]="product?.image" alt="{{product?.name}}"/>
+    <p class="price">Price: ${{product?.price}}</p>
+    <button class="addToCart" (click)="addToCart(product)">Add To Cart</button>
+    <p class="description">Default description of this amazing product.</p>
+    <p class="sku">Product SKU: {{product?.sku}}</p>
 </div>

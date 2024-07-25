@@ -24,7 +24,7 @@
     .price {
         font-weight: 500;
         font-size: 1.3rem;
-        color: #85BB65;
+        color: #81B622;
     }
 
     .rrp {
@@ -37,3 +37,35 @@
         justify-content: space-around;
     }
 }
+
+.productButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .productButtons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .addToCart {
+    background-color: #81B622;
+    color: white;
+  }
+  
+  .viewProduct {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .productButtons button:hover {
+    opacity: 0.8;
+  }
+  
+  .productButtons button:active {
+    transform: scale(0.98);
+  }
+  
