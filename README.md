@@ -6,8 +6,8 @@ npm install -g @angular/cli
 ```
 
 ## How to Run This Application
-1. Clone this repository to your local machine using the following command: git clone <THIS_REPOSITORY_URL>
-2. Navigate to the root directory of the cloned repository and run 'npm install' to download all necessary dependencies.
+1. Clone this repository to your local machine using the following command: `git clone <THIS_REPOSITORY_URL>`
+2. Navigate to the root directory of the cloned repository and run `npm install` to download all necessary dependencies.
 3. Run `ng serve` for a dev server and then navigate to `http://localhost:4200/` in your browser.
 
 ## Running unit tests
